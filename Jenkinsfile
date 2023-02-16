@@ -12,6 +12,11 @@ pipeline{
         sh './task5'
       }
     }
+   stage('Deploy'){
+      steps{
+        echo 'Deploying'
+      }
+    }
   }
   post{
     failure{
